@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Cities</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="grey lighten-5">
+
+
+    <div class="container">
+        <h2 class="center">City Population Report</h2>
+        <table class="responsive-table striped">
+            <thead>
+                <tr >
+                    <th class="center"></th>
+                    <th class="center">Cities</th>
+                    <th class="center">Population</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <th class="">Largest</th>
+                    <td class="center"><%=cityBname%></td>
+                    <td class="center"><%=largest%></td>
+                </tr>
+                <thead>
+                    <th class="">Smallest</th>
+                    <td class="center"><%=citySname%></td>
+                    <td class="center"><%=smallest%></td>
+                </thead>
+                <tr>
+                    <th class="">Average population of all cities</th>
+                    <td class="center"><%=average%></td>
+                    <td class="center"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        table{
+            margin-top: 5%;
+        }
+    </style>
+</body>
+</html>
