@@ -14,6 +14,7 @@ const open = require("open");
   population["biggest"] = Math.max(...temp); 
   cities["lowest"] = cityData[temp.indexOf(population["lowest"])]["City"];
   cities["biggest"] = cityData[temp.indexOf(population["biggest"])]["City"];
+  
   let totalSum = temp.reduce((a, b) => a + b);
   let average = Math.round(totalSum / cityData.length);
   
